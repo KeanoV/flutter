@@ -25,7 +25,7 @@ final List<String> kSkippedDemos = <String>[
 /// home screen twice.
 Future<void> runDemos(List<String> demos, WidgetController controller) async {
   final Finder demoList = find.byType(Scrollable);
-  String currentDemoCategory;
+  String? currentDemoCategory;
 
   for (final String demo in demos) {
     if (kSkippedDemos.contains(demo))
